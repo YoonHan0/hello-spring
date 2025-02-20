@@ -29,3 +29,23 @@
    [링크](https://velog.io/@dghff/IntelliJ-IDEA-%EC%8B%A4%ED%96%89%EC%8B%9C-%EB%AC%B4%ED%95%9C%EB%A1%9C%EB%94%A9%EB%90%98%EB%8A%94-%EC%9D%B4%EC%8A%88-%ED%95%B4%EA%B2%B0)
    참고하면 해결할 수 있다.
    ![Image](https://github.com/user-attachments/assets/31d1d8a3-d247-4872-b581-612335a54568)
+
+---
+
+<br />
+<br />
+
+### 프로젝트 구조
+```
+hello-spring
+      | -- src
+            | -- main
+                   | -- java
+                   | -- resources
+      
+``` 
+> ✅ resources
+> 
+> 코드를 제외한 설정들이 들어감
+> 
+> - HTML 코드도 포함
