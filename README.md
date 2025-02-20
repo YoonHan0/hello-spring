@@ -1,6 +1,9 @@
 # Spring Project 시작
+- Gradle
+- Spring Boot 3.4.2
+- Java 17
 
-### Spring Build
+### Build
 시작부터 쉽지 않다
 
 1. [Spring Project 생성](https://start.spring.io)<br />
