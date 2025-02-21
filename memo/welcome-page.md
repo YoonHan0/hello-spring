@@ -5,7 +5,7 @@ Spring Boot는 `resources/static/index.html`을 가장 먼저 읽는다. [참고
 #### 테스트하기
 
 1. index.html 파일 생성
-```dtd
+``` html
 // src/resources/static/index.html
 <!DOCTYPE html>
 <html lang="ko">
@@ -31,4 +31,5 @@ Spring Boot는 `resources/static/index.html`을 가장 먼저 읽는다. [참고
 3. hello 링크 클릭을 하게 되면
 
    아래처럼 `Error Page`가 출력됨
+   
    ![Image](https://github.com/user-attachments/assets/4b7ecd48-7f85-4370-aea2-3fcde5094b65)
