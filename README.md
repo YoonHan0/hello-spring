@@ -5,23 +5,11 @@
 
 [초기 프로젝트 세팅](memo/BUILD.md)
 
+[라이브러리 살펴보기](memo/spring-libraries.md)
 
----
+[Welcome Page](memo/welcome-page.md)
+
+[Thymeleaf 사용하기](memo/thymeleaf-basics.md)
 
 <br />
 <br />
-
-### 프로젝트 구조
-```
-hello-spring
-      | -- src
-            | -- main
-                   | -- java
-                   | -- resources
-      
-``` 
-> ✅ resources
-> 
-> 코드를 제외한 설정들이 들어감
-> 
-> - HTML 코드도 포함
