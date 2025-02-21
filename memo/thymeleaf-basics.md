@@ -1,5 +1,16 @@
 ### Thymeleaf 사용하기
 
+<br />
+
+Thymeleaf 사용 방법을 알아보기 전에 스프링 부트에서의 전체적인 흐름을 알고 있는게 좋을 것 같아
+
+이미지 첨부하였습니다.
+
+![Image](https://github.com/user-attachments/assets/be94489c-80f4-43ba-a003-b5f486574293)
+<small>_이미지 출처: 인프런 강의(스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술)_</small>
+
+<br />
+
 Spring Boot에서 Template Engines으로
 - FreeMarker
 - [Thymeleaf](https://www.thymeleaf.org/)
