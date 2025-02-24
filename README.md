@@ -11,5 +11,7 @@
 
 [Thymeleaf 사용하기](memo/thymeleaf-basics.md)
 
+[빌드하고 실행하기](memo/gradle-build-run.md)
+
 <br />
 <br />
