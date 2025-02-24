@@ -67,3 +67,7 @@
 ![Image](https://github.com/user-attachments/assets/e9a38e69-d4f1-44f7-b43a-797bb2f9f7e0)
 
 종료할 때는 `Ctrl + c`
+
+<br />
+
+추후에 배포할 때는 `build`하면서 만든 `.jar`파일만 배포하면 된다.
