@@ -6,7 +6,7 @@
 - **jar 파일 생성 ( `./gradlew build`)**
 
     터미널에서 `./gradlew build` 명령어를 치게 되면 `jar 파일` 형태로 만들어준다. <br />
-    또 에러가 발생했다.. 쉽지않네
+    또 에러가 발생했다.. 쉽지않네 <br />
   ![Image](https://github.com/user-attachments/assets/3707cee9-239e-4779-8ef1-207ef2d74478)
 
     <br /> 오류 내용을 보면 Build를 하려는데 JDK 버전이 맞지 않다고 하는 것 같아 JDK 버전을 수정하기로 했음.
@@ -24,6 +24,8 @@
   ![Image](https://github.com/user-attachments/assets/f901c212-2657-4ef2-bd54-68c24671f4a9)
 
 
+<br />
+<br />
 
 ### 실행하기
 
@@ -43,6 +45,9 @@
 
 라고 GPT가 알려주신다!
 
+<br />
+<br />
+
 실행하는 자바 버전을 변경하는 방법을 찾아보니 가장 간단한 방법이 <br />
 ``` bash
 # 원하는 Java 버전이 있는 경로/bin/java -jar Build를 통해 생성된 .jar 파일
@@ -51,8 +56,12 @@
 
 원하는 버전의 Java가 저장되어 있는 경로를 입력하여 직접 실행하는 방법이었다.
 
+<br />
+
 이런 식으로 실행이 가능하게 된다.
 ![Image](https://github.com/user-attachments/assets/bc821fb9-3aff-4797-8b02-adbd21205f33)
+
+<br />
 
 `.jar`파일을 실행했으니 `localhost:8080`에 접속해서 제대로 실행됐는지 확인하면 성공~
 ![Image](https://github.com/user-attachments/assets/e9a38e69-d4f1-44f7-b43a-797bb2f9f7e0)
