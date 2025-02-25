@@ -71,3 +71,8 @@
 <br />
 
 추후에 배포할 때는 `build`하면서 만든 `.jar`파일만 배포하면 된다.
+
+<br />
+
+#### 실행 중 발생할 수 있는 오류
+[Cannot resolve symbol 에러 해결](https://ottl-seo.tistory.com/44)
