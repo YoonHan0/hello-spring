@@ -15,3 +15,10 @@
 
 <br />
 <br />
+
+# 스프링 웹 개발 기초
+
+스프링 웹 개발에는 크게 3가지 개발 방식이 있다.
+- [정적컨텐츠](memo/static-content.md)
+- [MVC와 템플릿 엔진](memo/mvc-and-template-engines.md)
+- API
