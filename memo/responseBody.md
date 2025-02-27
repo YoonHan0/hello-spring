@@ -101,12 +101,12 @@ Spring은 기본적으로 객체를 반환할 때 JSON 형태로 반환한다고
 <br />
 <br />
 
+## 같이 공부해 볼 개념
+
 ### JSON이란?
 
 **J**ava **S**cript **O**bject **N**otation의 약자이다. <br />
 데이터를 쉽게 **교환**하고 **저장**하기 위한 텍스트 기반의 데이터 교환 표준이다.
-
-<br />
 
 #### 기본 형태
 
@@ -114,3 +114,18 @@ Spring은 기본적으로 객체를 반환할 때 JSON 형태로 반환한다고
 { key : value }
 ```
 JSON의 형태는 키(key), 값(value)의 쌍으로 이루어진 구조이다. [참고](https://codingazua.tistory.com/4)
+
+<br />
+<br />
+
+### 자바빈 프로퍼티란?
+Spring 프레임워크에서는 자바빈 프로퍼티를 활용하여 객체의 상태를 캡슐화하고, 쉽게 접근하고 조작할 수 있는 기능을 제공한다. [참고](https://jjangadadcodingdiary.tistory.com/entry/Spring-%EC%9E%90%EB%B0%94%EB%B9%88-%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0Property%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EB%B2%95)
+
+**자바빈 프로퍼티는** <br/>
+- 객체의 필드에 접근하기 위한 Getter, Setter 메서드를 통칭하는 용어이다.
+- Spring에서는 자바빈 프로퍼티를 활용하여 객체의 상태를 캡슐화하고, 외부에서 안전하게 필드에 접근하고 조작할 수 있도록 지원한다.
+- 자바빈 프로퍼티의 역할로는
+  - 캡슐화
+  - 접근 제어
+  - 데이터 바인딩
+
