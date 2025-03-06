@@ -15,7 +15,7 @@ class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    /* 테스트는 서로 의존관계가 설계되어야 함 */
+    /* 테스트는 서로 의존관계가 없도록 설계되어야 함 */
     /* @AfterEach 를 달아놓으면 하나의 @Test가 끝날 때마다 실행되는 거 같음 */
     /* 테스트케이스를 만들고 -> 구현체 개발하는 방식을 => 테스트 주도 개발(TDD)라고 함 */
     @AfterEach
