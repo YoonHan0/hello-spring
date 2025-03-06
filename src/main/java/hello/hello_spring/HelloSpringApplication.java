@@ -5,7 +5,9 @@ import hello.hello_spring.domain.Dog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+
 
 @SpringBootApplication
 public class HelloSpringApplication {
@@ -15,6 +17,6 @@ public class HelloSpringApplication {
 
 		System.out.println("Hello World!");
 
-
 	}
+
 }
