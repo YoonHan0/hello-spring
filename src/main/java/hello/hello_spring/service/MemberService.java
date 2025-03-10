@@ -3,17 +3,21 @@ package hello.hello_spring.service;
 import hello.hello_spring.domain.Member;
 import hello.hello_spring.repository.MemberRepository;
 import hello.hello_spring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.List;
 
 /* Service는 비지니스적으로 함수명을 작성하던지 해야함 :. Service가 비지니스 처리를 하는 곳이기도 하고 추후에 어떤 문제가 생겨서 오류를 찾을 때도 찾기 편하기 때문에 */
+@Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();     // MemberRepository는 인터페이스이므로 new ...로 인스턴스화를 하지 못함
     // 동일한 memberRepository 를 사용하기 위해서 위 코드에서 아래 코드로 수정
     private final MemberRepository memberRepository;
 
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
