@@ -2,7 +2,10 @@
 
 JUnit으로 테스트를 하기 전에 알아두어야 할 개념이 있다. 
 - 테스트는 서로 의존관계가 없도록 설계되어야 한다.
-- `@AfterEach`를 사용하면 `@Test`이 사용된 메서드가 끝날 때마다 실행되도록 할 수 있다.
+- `@AfterEach`를 사용하면 `@Test`이 사용된 메서드가 끝날 때마다 실행되도록 할 수 있다. 
+- 테스트 케이스를 작성할 때는 `given` -> `when` -> `then` 형태로 작성한다. 
+- 테스트 코드는 영어권 사람들과 같이 일을 하는게 아니라면 메서드명을 한글로 작성해도 된다. 
+- 테스트 코드는 정상 동작도 중요하지만, 예외를 확인하는게 더 중요하다.
 
 <br />
 
@@ -23,11 +26,12 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
 
 2. test 클래스 생성
     - 테스트하고자하는 `클래스명 + Test`, `MemberService.java -> MemberServiceTest.java`
-    ```java
+
+  ```java
    class MemoryMemberRepositoryTest {
-   ...
+    /* ... */
    }
-    ```
+  ```
 
 <br />
 
@@ -59,9 +63,9 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
             // Assertions.assertEquals(member, result);             // import org.junit.jupiter.api.Assertions;
             Assertions.assertThat(member).isEqualTo(result);        // import org.assertj.core.api.Assertions;  / static import를 하면 앞에 Assertions를 붙이지 않아도 사용 가능
         }
-   ...
+   /* ... */
    }
-   ```
+   /* ... */
    
 <br />
 
@@ -91,6 +95,79 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
    ![Image](https://github.com/user-attachments/assets/591f3fc4-6294-4b56-b88a-f35564646364) <br /><br />
 4. 생성 완료
    ![Image](https://github.com/user-attachments/assets/170646f7-4a65-4431-ac13-5a9eec133daf)
+
+<br />
+<br />
+
+### 참고하면 좋을 테스트 케이스에 대한 내용 예시
+
+``` java
+
+class MemberServiceTest {
+
+    MemberService memberService;
+    MemoryMemberRepository memberRepository;
+
+    @BeforeEach
+    public void beforeEach() {
+        memberRepository = new MemoryMemberRepository();
+        memberService = new MemberService(memberRepository);
+    }
+
+    @AfterEach
+    public void afterEach() {
+        memberRepository.clearStore();
+    }
+
+    @Test
+    void 회원가입() {          // 💡 메서드명을 한글로 작성 가능하다
+        // given, 어떤 데이터가
+        Member member = new Member();
+        member.setName("spring");
+
+        // when,  이 시점에 주어졌을 때
+        Long saveId = memberService.join(member);
+
+        // then, 이런 결과가 나온다
+        Member findMember = memberService.findOne(saveId).get();
+        assertThat(member.getName()).isEqualTo(findMember.getName());   // import static이 되어야 Assertions 를 생략할 수 있다.
+    }
+
+    @Test
+    void 중복_회원_예외() {
+        // given
+        Member member1 = new Member();
+        member1.setName("spring");
+
+        Member member2 = new Member();
+        member2.setName("spring");
+
+        // when                     // 💡 예외 처리에 대한 방법은 아래와 같이 여러 방법이 있다.
+//        방법[1]
+//        memberService.join(member1);
+//        try {
+//            memberService.join(member2);
+//            fail();
+//        } catch (IllegalStateException e) {
+//            assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
+//        }
+
+//        방법[2]
+//        memberService.join(member1);
+//        assertThrows(IllegalStateException.class, () -> memberService.join(member2));       // assertThrows(발생하는_예외_클래스, 실행하는_콜백_함수);
+                                                                                            // "콜백 함수를 실행했을 때 특정 예외가 발생한다"라고 설정하는 로직임
+//        방법[3]
+        memberService.join(member1);
+        IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
+        assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
+
+        // then
+    }
+
+    /* ... */
+}
+
+```
 
 
 <br />
