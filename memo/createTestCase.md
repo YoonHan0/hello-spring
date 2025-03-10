@@ -87,8 +87,9 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
 1. 테스트 케이스를 만들고 싶은 클래스 내에서 `command+shift+t` -> `Create New Test...` 클릭
    ![Image](https://github.com/user-attachments/assets/2986122b-8da1-497a-bafe-cc69544f6753) <br /><br />
 2. 하단 체크박스에서 테스트 케이스를 만들고 싶은 메서드를 선택 후 `OK 클릭`
+
    ![Image](https://github.com/user-attachments/assets/591f3fc4-6294-4b56-b88a-f35564646364) <br /><br />
-3. 생성 완료
+4. 생성 완료
    ![Image](https://github.com/user-attachments/assets/170646f7-4a65-4431-ac13-5a9eec133daf)
 
 
