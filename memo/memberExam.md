@@ -39,7 +39,7 @@
 ```
 
 ### 테스트 코드 작성
-...
+[JUnit5를 이용한 테스트 케이스](createTestCase.md)
 
 <br />
 <br />
@@ -49,3 +49,8 @@
 [추상클래스 정리](abstractMethod.md) <br />
 [인터페이스 정리](interface.md)
 
+<br />
+<br />
+
+### 의존성 관리(DI)
+[의존성 관리](dependencyInjection.md)
