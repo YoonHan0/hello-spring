@@ -17,7 +17,7 @@ public class MemberService {
     // 동일한 memberRepository 를 사용하기 위해서 위 코드에서 아래 코드로 수정
     private final MemberRepository memberRepository;
 
-    @Autowired
+
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
