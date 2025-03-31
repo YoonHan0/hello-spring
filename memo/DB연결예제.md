@@ -8,4 +8,4 @@
 - 데이터베이스 파일 생성 방법 <br />
     - `jdbc:h2:~/test` (최초 한번) <br />
     - `'~/test.mv.db` 파일 생성 확인 <br />
-    - 이후부터는 `jdbc:h2: tcp://localhost/~/test` 이렇게 접속
+    - 이후부터는 `jdbc:h2: tcp://localhost/~/test` 이렇게 접속1
