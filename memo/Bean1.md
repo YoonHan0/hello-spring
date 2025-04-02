@@ -1,6 +1,6 @@
 # 🥜 스프링 빈을 등록하는 2가지 방법
 
-1. 컴포넌트 스캔과 자동 의존관계 설정
+1. **컴포넌트 스캔과 자동 의존관계 설정**
 2. [자바 코드로 직접 스프링 빈 등록하기](자바_코드로_직접_빈_등록.md)
 
 <br />
@@ -98,7 +98,7 @@ public class MemberController {
 
     private final MemberService memberService;
 
-    @Autowired  // 의존성 주입 : DI, 연결하는 로직
+    @Autowired  // 의존성 주입 : DI, 연결하는 로직 (Spring 4.3 이상에서는 클래스에 생성자가 단 하나만 존재하면, @Autowired를 생략해도 자동으로 주입됩니다.)
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
@@ -112,7 +112,7 @@ public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+    @Autowired   // Spring 4.3 이상에서는 클래스에 생성자가 단 하나만 존재하면, @Autowired를 생략해도 자동으로 주입됩니다.
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
