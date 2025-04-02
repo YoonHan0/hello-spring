@@ -29,5 +29,13 @@
 # 간단한 예제 개발
 
 - [회원 관리 예제 - 백엔드 개발](memo/memberExam.md)
+  - 테스트 코드 작성
+    - [JUnit5를 이용한 테스트 케이스](memo/createTestCase.md)
+  - 추상클래스 vs 인터페이스
+    - [추상클래스 정리](memo/abstractMethod.md)
+    - [인터페이스 정리](memo/interface.md)
+  - 빈 등록하기
+    - [1. 컴포넌트 스캔과 자동 의존관계 설정](memo/Bean1.md)
+    - [2. 자바 코드로 직접 스프링 빈 등록하기](memo/자바_코드로_직접_빈_등록.md)
 - [회원 관리 예제 - 웹 MVC 개발](memo/웹MVC개발.md)
 - [DB 연결 예제](memo/DB연결예제.md)
