@@ -87,7 +87,12 @@ Spring이 실행될 때 해당 클래스 하위에 존재하는 클래스들을 
 
 <br />
 
-**이제 Controller -> Serivce -> Repository 순으로 클래스들을 빈으로 등록해보겠습니다.**
+**이제 Controller -> Serivce -> Repository 순으로 클래스들을 빈으로 등록해보겠습니다.** <br />
+
+<br />
+
+Spring 공식 문서에 따르면 `생성자 주입`방식을 가장 권장하고 있기 때문에 해당 방식으로 테스트 해보았습니다. <br />
+([공식문서](https://docs.spring.io/spring-boot/reference/using/spring-beans-and-dependency-injection.html?utm_source=chatgpt.com), [의존성을 주입하는 4가지 방법](https://ittrue.tistory.com/227))
 
 <br />
 
