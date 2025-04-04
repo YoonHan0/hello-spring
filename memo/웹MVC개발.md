@@ -1,6 +1,53 @@
-## 회원 관리 예제 - 웹 MVC 개발
+# 회원 관리 예제 - 웹 MVC 개발
 
 <br />
+
+## 🖥️ 결과화면
+![Image](https://github.com/user-attachments/assets/cc59cdf5-03be-4a49-8014-dc91041f7868)
+
+회원관리 예제를 만들면서 Spring에 대해 공부를 해볼건데 <br />
+`localhost:8080`으로 접속했을 때 위와 같은 화면이 나오도록 개발해 보겠습니다.
+
+
+## 기능 구현
+
+### 1. ("/") 경로에 접근했을 때 반환될 화면 개발
+1. `home.html` 파일 생성
+```html
+ <!DOCTYPE HTML>
+ <html xmlns:th="http://www.thymeleaf.org">
+ <body>
+
+ <div class="container">
+     <div>
+         <h1>Hello Spring</h1>
+         <p>회원 기능</p>
+         <p>
+             <a href="/members/new">회원 가입</a>
+             <a href="/members">회원 목록</a>
+         </p>
+     </div>
+ </div> <!-- container -->
+ </body>
+ </html>
+```
+2. 웹 브라우저에서 `localhost:8080`으로 요청이 왔을 때 맵핑될 메서드 구현
+```java
+/* MemberController */
+@Controller
+public class MemberController {
+
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+}
+```
+
+### ----- 위까지 작성 완료 -----
+
+---
+
 
 ### 1. 회원가입 기능
 
