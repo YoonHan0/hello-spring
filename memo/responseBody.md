@@ -23,7 +23,8 @@
 ## ResponseBody 사용
 
 - `Http Response Body`에 **직접 데이터를 반환**
-- 템플릿을 사용하지 않고, **데이터 자체를 응답**하는 방식 (`ViewResolver` 대신에 `HttpMessageConverter`가 동작)
+- 템플릿을 사용하지 않고, **데이터 자체를 응답**하는 방식 (`ViewResolver` 대신에 `HttpMessageConverter`가 동작)<br />(=리턴값을 View 이름으로 해석하지 말고, HTTP Response Body에 그대로 담아 보내라는 의미)
+- 주로 API 응답, JSON/String 등 View 없이 처리할 때 사용  
 - 기본 문자처리: `StringHttpMessageConverter`
 - 기본 객체처리: `MappingJacson2HttpMessageConverter`
 - byte 처리 등등 기타 여러 `HttpMessageConverter`가 등록되어 있음
