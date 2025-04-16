@@ -49,6 +49,8 @@ public class MemberController {
 
 ### 1. 회원가입 기능
 
+/* 회원가입 화면 이미지 첨부 */
+
 1. 화면에 그려줄 파일 생성 `resourcces/templates/members/createMemberForm.html` 생성
     ```html
     <!-- ... -->
