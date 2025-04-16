@@ -44,8 +44,6 @@ public class MemberController {
 }
 ```
 
-### ----- 위까지 작성 완료 -----
-
 ---
 
 
@@ -78,25 +76,41 @@ public class MemberController {
     ```
 3. `MemberController` 메서드 추가 
    ```java
-    // `/members/new` 경로로 들어오게 되면 viewResolver가 createMemberForm.html을 화면에 글려줌
-    @GetMapping("/members/new")
-    public String createForm() {
-        return "members/createMemberForm"; 
-    }
-   
-    // createMemberForm 화면에서 "등록" 버튼 클릭 시 post 방식으로 호출되면서 create 메서드 호출
-    // 파라미터로 MemberForm 클래스를 받으면서 html파일에서 submit한 name 데이터가 MemberForm 클래스의 name 필드로 받아짐
-    @PostMapping("/members/new")
-    public String create(MemberForm form) {
-        Member member = new Member();
-        member.setName(form.getName());
-        
-        System.out.println(form.getName()); // 입력된 데이터 출력됨
-        memberService.join(member);
 
-        return "redirect:/";
-    }
+   @Controller
+   public class MemberController {
+
+     private final MemberService memberService;
+
+     @Autowired  // 의존성 주입 : DI, 연결하는 로직
+     public MemberController(MemberService memberService) {
+         this.memberService = memberService;
+     }
+   
+     // `/members/new` 경로로 들어오게 되면 viewResolver가 createMemberForm.html을 화면에 글려줌
+     @GetMapping("/members/new")
+     public String createForm() {
+         return "members/createMemberForm"; 
+     }
+    
+     // createMemberForm 화면에서 "등록" 버튼 클릭 시 post 방식으로 호출되면서 create 메서드 호출
+     // 파라미터로 MemberForm 클래스를 받으면서 html파일에서 submit한 name 데이터가 MemberForm 클래스의 name 필드로 받아짐
+     @PostMapping("/members/new")
+     public String create(MemberForm form) {
+         Member member = new Member();
+         member.setName(form.getName());
+         
+         System.out.println(form.getName()); // 입력된 데이터 출력됨
+         memberService.join(member);
+ 
+         return "redirect:/";
+     }
+   }
     ```
+4. `MemberService` 메서드 구현
+   ```java
+   // 1
+   ```
 
 <br />
 <br />
