@@ -48,6 +48,10 @@ Spring을 사용한 일반적인 웹 애플리케이션은 **역할별로 계층
 
 <br />
 
+예제 개발을 하기 전 전체적인 프로젝트 구조를 먼저 보여드리겠습니다.
+
+<br />
+
 ## 📁 프로젝트 구조
 ```
 ├── 📂 backend         
@@ -71,9 +75,17 @@ Spring을 사용한 일반적인 웹 애플리케이션은 **역할별로 계층
 │   ├── ...
 ```
 
-### 개발할 예제의 클래스 의존관계
-<img width="559" alt="Image" src="https://github.com/user-attachments/assets/859aafe1-0939-4c35-8cc8-8d8de3511fb8" /> <br /> 
-<small>_이미지 출처: 인프런 강의(스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술)_</small>
+<details>
+    <summary>개발한 예제의 클래스 의존관계 설명</summary>
+
+    ### 개발할 예제의 클래스 의존관계
+
+    ![이미지](https://github.com/user-attachments/assets/859aafe1-0939-4c35-8cc8-8d8de3511fb8) <br />
+    이미지 출처: 인프런 강의(스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술)
+
+</details>
+
+
 
 <br />
 
