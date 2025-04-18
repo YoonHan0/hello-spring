@@ -30,10 +30,3 @@ dependencies {
   spring. datasource.driver-class-name=org.h2.Driver
 ```
 DB 접속 정보를 Spring Boot에게 제공해서 Spring이 접속에 필요한 처리를 해주도록 하는 로직
-
-
-<img width="666" alt="Image" src="https://github.com/user-attachments/assets/28c1c592-f40d-4085-b0e8-2c8fb7a9e5a8" />
-
-<img width="661" alt="Image" src="https://github.com/user-attachments/assets/23c80c37-acc0-4112-b023-a20e4cfed240" />
-
-<img width="641" alt="Image" src="https://github.com/user-attachments/assets/8fa2a9ef-f41e-4971-ab54-ab46980da93a" />
