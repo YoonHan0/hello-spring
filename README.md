@@ -39,6 +39,7 @@
     - [2. 자바 코드로 직접 스프링 빈 등록하기](memo/자바_코드로_직접_빈_등록.md)
 - [회원 관리 예제 - 웹 MVC 개발](memo/웹MVC개발.md)
 - [DB 연결 예제](memo/DB연결예제.md)
+- [JDBC Template 사용하기](memo/JDBC_TEMPLATE_사용하기.md)
 
 <br />
 <br />
