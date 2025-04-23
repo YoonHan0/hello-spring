@@ -3,7 +3,7 @@
 - Spring Boot 3.4.2
 - Java 17
 
-[초기 프로젝트 세팅](memo/BUILD.md)
+[초기 프로젝트 세팅](memo/BUILD.md) 
 
 [라이브러리 살펴보기](memo/spring-libraries.md)
 
