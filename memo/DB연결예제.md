@@ -20,7 +20,7 @@
   ```
   쉘 파일을 닫고 다시 실행 `./h2.sh`
 - 데이터베이스 파일 생성 방법
-    - `jdbc:h2:~/test` (최초 한번)
+    - JDBC URL: `jdbc:h2:~/test` (최초 한번)
     - `'~/test.mv.db` 파일 생성 확인
     - 이후부터는 `jdbc:h2: tcp://localhost/~/test` 이렇게 접속
 
