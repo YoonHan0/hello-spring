@@ -40,6 +40,7 @@
 - [회원 관리 예제 - 웹 MVC 개발](memo/웹MVC개발.md)
 - [DB 연결 예제](memo/DB연결예제.md)
 - [JDBC Template 사용하기](memo/JDBC_TEMPLATE_사용하기.md)
+    - [발생했던 오류](memo/DB_사용시_오류.md)
 
 <br />
 <br />
