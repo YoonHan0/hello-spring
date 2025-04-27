@@ -22,6 +22,8 @@
 - 데이터베이스 파일 생성 방법
     - JDBC URL: `jdbc:h2:~/test` (최초 한번)
     - `'~/test.mv.db` 파일 생성 확인
+
+      <img width="651" alt="Image" src="https://github.com/user-attachments/assets/ffc2c9b7-b3bd-4d78-b034-9c3593539b18" />
     - 이후부터는 `jdbc:h2: tcp://localhost/~/test` 이렇게 접속
 
 
