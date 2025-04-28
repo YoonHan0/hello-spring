@@ -20,8 +20,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-jdbc'	/* JAVA에서 DB랑 연결을 하기 위해서는 반드시 JDBC가 필요하다. */
-	runtimeOnly 'com.h2database:h2'										/* DB에서 필요한 클라이언트를 h2를 사용한다. */
+	// implementation 'org.springframework.boot:spring-boot-starter-jdbc'			/* JAVA에서 DB랑 연결을 하기 위해서는 반드시 JDBC가 필요하다. */
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'												/* DB에서 필요한 클라이언트를 h2를 사용한다. */
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
