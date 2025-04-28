@@ -44,7 +44,7 @@ public class JdbcTemplateMemberRepository implements MemberRepository {
         /*
         1. 문자열 형태로 되어 있는 쿼리를 실행
         2. memberRowMapper()로 값을 받음
-        3. 결과를 result로 return
+        3. 결과를 return
         */
         List<Member> result = jdbcTemplate.query("SELECT * FROM member WHERE id = ?", memberRowMapper(), id);
         return result.stream().findAny();
