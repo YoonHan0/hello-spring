@@ -42,6 +42,7 @@
 - [JDBC Template 사용하기](memo/JDBC_TEMPLATE_사용하기.md)
     - [발생했던 오류](memo/DB_사용시_오류.md)
 - [JPA 사용하기](memo/JPA_사용하기.md)
+- [스프링 데이터 JPA 사용하기](memo/스프링_데이터_JPA_사용하기.md)
 
 <br />
 <br />
