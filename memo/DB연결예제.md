@@ -20,12 +20,18 @@
   ```
   쉘 파일을 닫고 다시 실행 `./h2.sh`
 - 데이터베이스 파일 생성 방법
-    - JDBC URL: `jdbc:h2:~/test` (최초 한번)
-    - `'~/test.mv.db` 파일 생성 확인
 
-      <img width="651" alt="Image" src="https://github.com/user-attachments/assets/ffc2c9b7-b3bd-4d78-b034-9c3593539b18" />
-    - 이후부터는 `jdbc:h2: tcp://localhost/~/test` 이렇게 접속
+  <img width="483" alt="Image" src="https://github.com/user-attachments/assets/9731d059-f307-4f3d-8c93-33f261fe2f76" />
 
+  1. JDBC URL: `jdbc:h2:~/test` (최초 한번) → 연결
+  2. `'~/test.mv.db` 파일 생성 확인
+  
+        <img width="651" alt="Image" src="https://github.com/user-attachments/assets/ffc2c9b7-b3bd-4d78-b034-9c3593539b18" />
+        
+    - 이후부터는 JDBC URL 입력란에 `jdbc:h2: tcp://localhost/~/test`로 수정해서 접속
+
+<br />
+<br />
 
 ## ✅ H2 데이터베이스 사용하기
 
@@ -41,7 +47,8 @@ dependencies {
 ### 스프링 부트 데이터베이스 연결 설정 추가
 ```xml
   <!-- resources/application.properties */ -->
-  spring.datasource.url=jdbc:h2:tcp://localhost/~/test
+  spring.datasource.url=jdbc:h2:tcp://localhost/~/test    <!-- spring.datasource.url=jdbc:h2:~/test(최초 한 번) -->
   spring. datasource.driver-class-name=org.h2.Driver
+  spring.datasource.username=sa
 ```
 DB 접속 정보를 Spring Boot에게 제공해서 Spring이 접속에 필요한 처리를 해주도록 하는 로직
