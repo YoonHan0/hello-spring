@@ -3,6 +3,9 @@
 [다운로드](https://www.h2database.com) <br />
 - 다운로드 및 설치
 - h2 데이터베이스 버전은 스프링 부트 버전에 맞춘다.
+  - 스프링 부트 2.x를 사용하면 **1.4.200 버전**을 다운로드 받으면 된다.
+  - 스프링 부트 3.x를 사용하면 **2.1.214 버전 이상** 사용해야 한다.
+  - [버전 참고](https://www.h2database.com/html/download-archive.html)
 - 다운로드한 h2 폴더 내부에 bin 폴더에 `h2.sh` 파일이 존재 (h2/bin/)
 - 권한 주기: `chmod 755 h2.sh`
 - 실행: `./h2.sh`
