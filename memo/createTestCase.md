@@ -2,7 +2,7 @@
 
 <br />
 
-### 단위 테스트(Unit Test) 준비
+### ✅ 단위 테스트(Unit Test) 준비
 요즘 Java 단위테스트 작성에는 크게 2가지 라이브러리를 사용한다고 합니다.
 - `JUnit5`: 자바 단위 테스트를 위한 테스팅 프레임워크
 - `AssertJ`: 자바 테스트를 돕기 위해 다양한 문법을 지원하는 라이브러
@@ -15,8 +15,8 @@
 JUnit으로 테스트를 하기 전에 알아두어야 할 개념이 있습니다.
 - 테스트는 서로 의존관계가 없도록 설계되어야 한다.
 - `@Test`는 해당 메서드가 단위 테스트임을 명시하는 어노테이션이다.
-- `@AfterEach`를 사용하면 `@Test`이 사용된 메서드가 끝날 때마다 실행되도록 할 수 있다. 
-- 테스트 케이스를 작성할 때는 `given` -> `when` -> `then` 형태로 작성한다.
+- `@AfterEach`를 사용하면 `@Test` 어노테이션이 사용된 메서드가 끝날 때마다 실행되도록 할 수 있다. 
+- 테스트 케이스를 작성할 때는 `given` → `when` → `then` 형태로 작성한다.
    - given(준비): 어떠한 데이터가 준비되었을 때
    - when(실행):  어떠한 함수를 실행하면
    - then(검증):  어떠한 결과가 나와야 한다.
@@ -27,12 +27,12 @@ JUnit으로 테스트를 하기 전에 알아두어야 할 개념이 있습니�
    ![Image](https://github.com/user-attachments/assets/40b6eb79-8e3e-44a6-9343-e9e081c31713) 
 
 <br />
+<br />
 
 JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지가 있는데
 - 직접 생성
 - 단축키 사용(클래스에서 command+shift+t)
 
-<br />
 <br />
 
 ### 1. 직접 생성하는 방법 ( 참고`MemoryMemberRepositoryTest.java` )
@@ -44,7 +44,7 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
 <br />
 
 2. test 클래스 생성
-    - 테스트하고자하는 `클래스명 + Test`, `MemberService.java -> MemberServiceTest.java`
+    - 테스트하고자하는 `클래스명 + Test`, `MemberService.java → MemberServiceTest.java`
 
   ```java
    class MemoryMemberRepositoryTest {
@@ -107,7 +107,7 @@ JUnit으로 테스트를 할 때 사용할 수 있는 방법은 크게 2가지�
 ### 2.단축키 사용하는 방법( 참고 `MemberServiceTest.java` )
 
 
-1. 테스트 케이스를 만들고 싶은 클래스 내에서 `command+shift+t` -> `Create New Test...` 클릭
+1. 테스트 케이스를 만들고 싶은 클래스 내에서 `command+shift+t` → `Create New Test...` 클릭
    ![Image](https://github.com/user-attachments/assets/2986122b-8da1-497a-bafe-cc69544f6753) <br /><br />
 2. 하단 체크박스에서 테스트 케이스를 만들고 싶은 메서드를 선택 후 `OK 클릭`
 
